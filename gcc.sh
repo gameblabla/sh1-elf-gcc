@@ -9,10 +9,10 @@
 #Email         	:   kentosama@genku.net                                          
 ##################################################################
 
-VERSION="9.3.0"
+VERSION="13.2.0"
 ARCHIVE="gcc-${VERSION}.tar.xz"
 URL="https://gcc.gnu.org/pub/gcc/releases/gcc-${VERSION}/${ARCHIVE}"
-SHA512SUM="4b9e3639eef6e623747a22c37a904b4750c93b6da77cf3958d5047e9b5ebddb7eebe091cc16ca0a227c0ecbd2bf3b984b221130f269a97ee4cc18f9cf6c444de"
+SHA512SUM="d99e4826a70db04504467e349e9fbaedaa5870766cda7c5cab50cdebedc4be755ebca5b789e1232a34a20be1a0b60097de9280efe47bdb71c73251e30b0862a2"
 DIR="gcc-${VERSION}"
 
 # Check if user is root
@@ -56,8 +56,8 @@ ${SRC_DIR}/${DIR}/configure --prefix=${INSTALL_DIR}                        \
                             --host=${HOST_MACH}                         \
                             --target=${TARGET}                          \
                             --program-prefix=${PROGRAM_PREFIX} \
-                            --with-multilib-list=m2 \
-                            --with-cpu=m2 \
+                            --with-multilib-list=m1 \
+                            --with-cpu=m1 \
                             --with-newlib \
                             --with-gnu-ld \
                             --with-gnu-as \

@@ -9,10 +9,10 @@
 #Email         	:   kentosama@genku.net                                          
 ###################################################################
 
-VERSION="2.34"
+VERSION="2.42"
 ARCHIVE="binutils-${VERSION}.tar.bz2"
 URL="https://ftp.gnu.org/gnu/binutils/${ARCHIVE}"
-SHA512SUM="f47e7304e102c7bbc97958a08093e27796b9051d1567ce4fbb723d39ef3e29efa325ee14a1bdcc462a925a7f9bbbc9aee28294c6dc23850f371030f3835a8067"
+SHA512SUM="d2c6d264bbeaaaf2aad1fa3fc417c1841a5dd4a299fa47c47d15adb821c22dae733e58f19ebcfea3b0c5890ba56e4a5f92ab55128a572d585bcd5172b63f456c"
 DIR="binutils-${VERSION}"
 
 # Check if user is root
@@ -60,7 +60,7 @@ ${SRC_DIR}/${DIR}/configure     --prefix=${INSTALL_DIR} \
                                 --enable-lto \
                                 --program-prefix=${PROGRAM_PREFIX} \
                                 --disable-nls \
-                                --with-multilib-list=m2 \
+                                --with-multilib-list=m1 \
                                 ${GOD}
 
 
