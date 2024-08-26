@@ -9,10 +9,10 @@
 #Email         	:   kentosama@genku.net                                          
 ##################################################################
 
-VERSION="13.2.0"
+VERSION="14.2.0"
 ARCHIVE="gcc-${VERSION}.tar.xz"
 URL="https://gcc.gnu.org/pub/gcc/releases/gcc-${VERSION}/${ARCHIVE}"
-SHA512SUM="d99e4826a70db04504467e349e9fbaedaa5870766cda7c5cab50cdebedc4be755ebca5b789e1232a34a20be1a0b60097de9280efe47bdb71c73251e30b0862a2"
+SHA512SUM="932bdef0cda94bacedf452ab17f103c0cb511ff2cec55e9112fc0328cbf1d803b42595728ea7b200e0a057c03e85626f937012e49a7515bc5dd256b2bf4bc396"
 DIR="gcc-${VERSION}"
 
 # Check if user is root

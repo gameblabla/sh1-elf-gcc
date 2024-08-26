@@ -9,10 +9,10 @@
 #Email         	:   kentosama@genku.net                                          
 ###################################################################
 
-VERSION="2.42"
+VERSION="2.43"
 ARCHIVE="binutils-${VERSION}.tar.bz2"
 URL="https://ftp.gnu.org/gnu/binutils/${ARCHIVE}"
-SHA512SUM="d2c6d264bbeaaaf2aad1fa3fc417c1841a5dd4a299fa47c47d15adb821c22dae733e58f19ebcfea3b0c5890ba56e4a5f92ab55128a572d585bcd5172b63f456c"
+SHA512SUM="ad00688eef3e70862850dfd865bd4b2baf95b34338d3d1b3ae1bdf840b9eac0f528a1c96767458ee9d06559dadafccb13aab5caae77bedf84443a551caef1289"
 DIR="binutils-${VERSION}"
 
 # Check if user is root

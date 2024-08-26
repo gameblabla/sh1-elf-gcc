@@ -46,13 +46,13 @@ $ ./buid-toolchain.sh
 
 ## Install
 
-Once the SH2 toolchain was successful built, you can process to the installation. Move or copy the "sh1-toolchain" folder in "/opt" or "/usr/local":
+Once the SH1 toolchain was successful built, you can process to the installation. Move or copy the "sh1-toolchain" folder in "/opt" or "/usr/local":
 
 ```bash
 $ sudo cp -R sh1-toolchain /opt
 ```
 
-If you want, add the SH2 toolchain to your path environment:
+If you want, add the SH1 toolchain to your path environment:
 
 ```bash
 $ echo export PATH="${PATH}:/opt/sh1-toolchain/bin" >> ~/.bash_rc
@@ -70,15 +70,15 @@ The result should display something like this:
 ```bash
 Using built-in specs.
 COLLECT_GCC=./sh1-elf-gcc
-COLLECT_LTO_WRAPPER=/home/anonymous/workspace/sh-elf-gcc/toolchain/libexec/gcc/sh-elf/13.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/home/anonymous/workspace/sh-elf-gcc/toolchain/libexec/gcc/sh-elf/14.2.0/lto-wrapper
 Target: sh-elf
-Configured with: /home/anonymous/workspace/sh-elf-gcc/source/gcc-13.2.0/configure --prefix=/home/kentosama/workspace/sh-elf-gcc/toolchain --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=sh-elf --program-prefix=sh1-elf- --with-multilib-list=m2 --with-cpu=m2 --with-newlib --with-gnu-ld --with-gnu-as --with-gcc --without-headers --without-included-gettext --disable-nls --enable-lto --enable-languages=c,c++ --disable-threads --disable-libmudflap --disable-libgomp --disable-nls --disable-werror --disable-libssp --disable-shared --disable-multilib --disable-libgcj --disable-libstdcxx ' ' : (reconfigured) /home/kentosama/Workspace/sh-elf-gcc/source/gcc-9.3.0/configure --prefix=/home/kentosama/workspace/sh-elf-gcc/toolchain --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=sh-elf --program-prefix=sh1-elf- --with-multilib-list=m2 --with-cpu=m2 --with-newlib --with-gnu-ld --with-gnu-as --with-gcc --without-headers --without-included-gettext --disable-nls --enable-lto --enable-languages=c,c++ --disable-threads --disable-libmudflap --disable-libgomp --disable-nls --disable-werror --disable-libssp --disable-shared --disable-multilib --disable-libgcj --disable-libstdcxx ' '
+Configured with: /home/anonymous/workspace/sh-elf-gcc/source/gcc-14.2.0/configure --prefix=/home/kentosama/workspace/sh-elf-gcc/toolchain --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=sh-elf --program-prefix=sh1-elf- --with-multilib-list=m2 --with-cpu=m2 --with-newlib --with-gnu-ld --with-gnu-as --with-gcc --without-headers --without-included-gettext --disable-nls --enable-lto --enable-languages=c,c++ --disable-threads --disable-libmudflap --disable-libgomp --disable-nls --disable-werror --disable-libssp --disable-shared --disable-multilib --disable-libgcj --disable-libstdcxx ' ' : (reconfigured) /home/kentosama/Workspace/sh-elf-gcc/source/gcc-9.3.0/configure --prefix=/home/kentosama/workspace/sh-elf-gcc/toolchain --build=x86_64-pc-linux-gnu --host=x86_64-pc-linux-gnu --target=sh-elf --program-prefix=sh1-elf- --with-multilib-list=m2 --with-cpu=m2 --with-newlib --with-gnu-ld --with-gnu-as --with-gcc --without-headers --without-included-gettext --disable-nls --enable-lto --enable-languages=c,c++ --disable-threads --disable-libmudflap --disable-libgomp --disable-nls --disable-werror --disable-libssp --disable-shared --disable-multilib --disable-libgcj --disable-libstdcxx ' '
 Thread model: single
-gcc version 13.2.0 (GCC)
+gcc version 14.2.0 (GCC)
 ```
 
-For backup, you can store the SH2 toolchain in external drive:
+For backup, you can store the SH1 toolchain in external drive:
 ```bash
-$ tar -Jcvf sh1-gcc-13.2.0-toolchain.tar.xz sh1-toolchain
-$ mv sh1-gcc-13.2.0-toolchain.tar.xz /storage/toolchains/
+$ tar -Jcvf sh1-gcc-14.2.0-toolchain.tar.xz sh1-toolchain
+$ mv sh1-gcc-14.2.0-toolchain.tar.xz /storage/toolchains/
 ```
